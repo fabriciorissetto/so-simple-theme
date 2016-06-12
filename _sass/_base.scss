@@ -29,7 +29,6 @@ body {
   font-family: $base-font;
   color: $text-color;
   background-color: $body-color;
-  border-top: 5px solid $black;
 }
 
 /*
@@ -218,4 +217,18 @@ pre {
 
 b, i, strong, em, blockquote, p, q, span, figure, img, h1, h2, header, input, a, .highlight {
 	@include transition(all .2s ease);
+}
+
+.sidebar {
+	position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 350px;
+    background: #202020;
+	padding: 0 20px 0 20px;
+}
+
+.content {
+	margin-left: 350px;
 }

@@ -24,12 +24,16 @@
   }
 }
 
+.sidebar .wrap {
+  padding: 0;
+}
 /*
    Site logo
    ========================================================================== */
 
 .site-logo {
   img {
+    margin-top: 40px;
     width: 100px;
     height: 100px;
     @include animation-duration(1s);
@@ -42,8 +46,8 @@
       @include rounded(150px); /* crops in a circle */
     }
     @include media($large) {
-      width: 200px;
-      height: 200px;
+      width: 160px;
+      height: 160px;
       @include rounded(200px); /* crops in a circle */
     }
   }
@@ -77,4 +81,12 @@
   @include media($medium) {
     @include font-size(20);
   }
+}
+
+.sidebar .site-title a {
+  color: white;  
+}
+
+.sidebar .site-description {
+  color: rgba(255,255,255,.5);
 }
