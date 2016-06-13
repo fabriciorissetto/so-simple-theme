@@ -91,4 +91,8 @@
 
 .sidebar .site-description {
   color: rgba(255,255,255,.5);
+  margin-bottom: 0;
+  @include media($medium) {
+    margin-bottom: 30px;
+  }
 }
